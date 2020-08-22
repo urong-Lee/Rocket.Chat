@@ -68,3 +68,8 @@ registerOmnichannelRoute('/facebook', {
 	name: 'omnichannel-facebook',
 	lazyRouteComponent: () => import('./facebook/FacebookPage'),
 });
+
+registerOmnichannelRoute('/realtime', {
+	name: 'omnichannel-realTime',
+	lazyRouteComponent: () => import('./realTimeMonitoring/RealTimeMonitoringPage'),
+});
